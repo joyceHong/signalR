@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>聊天室</title>
+</head>
+<body ng-app="chatModel"> <!--angular 應用程式-->
+    <br />
+    <div class="container">
+        <div class="row" ng-controller="chatController">
+            <div class="col-md-5">
+                <div class="panel panel-primary">
+                    <div class="panel-heading" id="accordion">
+                        <span class="glyphicon glyphicon-comment"></span> Chat
+                        <div class="btn-group pull-right">
+                            <a type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="panel-collapse collapse" id="collapseOne">
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li ng-class="{'left clearfix': messageObj.name!=name, 'right clearfix': messageObj.name ==name}" ng-repeat="messageObj in allMessage">
+                                    <span ng-class="{'chat-img pull-left': messageObj.name!=name,'chat-img pull-right': messageObj.name==name}">
+                                        <img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" ng-if="messageObj.name ==name" />
+                                        <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" ng-if="messageObj.name!=name" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header" ng-if="messageObj.name==name">
+                                            <strong class="primary-font">{{messageObj.name}}</strong> <small class="pull-right text-muted">
+                                                <span class="glyphicon glyphicon-time"></span>{{messageObj.time}}
+                                            </small>
+                                        </div>
+                                        <div class="header" ng-if="messageObj.name!=name">
+                                            <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>{{messageObj.time}}</small>
+                                            <strong class="pull-right primary-font">{{messageObj.name}}</strong>
+                                        </div>                                     
+                                        <p>
+                                            {{messageObj.message}}
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input type="hidden" ng-model="name" />
+                                <input type="hidden" ng-model="group" />
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." ng-model="message" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm" id="btn-chat" ng-click="send()">
+                                        Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.2.0.js"></script>
+    <script src="signalr/hubs"></script> <!-- signalr/hubs 是不存在的檔案，但會自動產生 -->
+    <script src="Scripts/angular.min.js"></script>    
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/Chat.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript">
+        var app = angular.module("chatModel", []);
+        app.controller("chatController", function ($scope) {
+            $scope.allMessage = []; //初始化
+            var proxy = $.connection.chatHub;            
+            $scope.group = prompt("請輸入您的群組", "");
+            $scope.name = prompt("請輸入您的名字","");
+
+            $.connection.hub.start().done(function () {
+                //先建立群組
+                proxy.server.join($scope.group);
+                $scope.send = function () {
+                    proxy.server.send($scope.name, $scope.message); //廣播給全部的人
+                    //proxy.server.groupSend($scope.group, $scope.message);
+                };
+            });
+
+            proxy.client.addNewMessageToPage = function (name, message) {
+                $scope.allMessage.push({
+                    "name": name,
+                    "message": message,
+                    "time": new Date()
+                });
+                $scope.$apply(); //更新畫面
+            };
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\singalR2.dll.config
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\singalR2.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\singalR2.pdb
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Antlr3.Runtime.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Microsoft.AspNet.SignalR.Core.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Microsoft.Owin.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Microsoft.Owin.Security.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Microsoft.Web.Infrastructure.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Newtonsoft.Json.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Owin.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.Helpers.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.Mvc.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.Optimization.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.Razor.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.WebPages.Deployment.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.WebPages.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.WebPages.Razor.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\WebGrease.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Microsoft.AspNet.SignalR.Core.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Microsoft.Owin.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Microsoft.Owin.Security.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Newtonsoft.Json.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.Helpers.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.Mvc.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.Optimization.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.Razor.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.WebPages.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.WebPages.Deployment.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\System.Web.WebPages.Razor.xml
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\Antlr3.Runtime.pdb
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\zh-Hant\Microsoft.Owin.resources.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\zh-Hant\Microsoft.Owin.Host.SystemWeb.resources.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\zh-Hant\Microsoft.Owin.Security.resources.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\zh-Hant\System.Web.Helpers.resources.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\zh-Hant\System.Web.Mvc.resources.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\zh-Hant\System.Web.Optimization.resources.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\zh-Hant\System.Web.Razor.resources.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\zh-Hant\System.Web.WebPages.resources.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\obj\Debug\singalR2.csprojResolveAssemblyReference.cache
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\obj\Debug\singalR2.dll
+c:\users\rdcp01\documents\visual studio 2013\Projects\singalR2\singalR2\obj\Debug\singalR2.pdb
+D:\joyce\105\singalR2\singalR2\bin\singalR2.dll.config
+D:\joyce\105\singalR2\singalR2\bin\singalR2.dll
+D:\joyce\105\singalR2\singalR2\bin\singalR2.pdb
+D:\joyce\105\singalR2\singalR2\bin\Antlr3.Runtime.dll
+D:\joyce\105\singalR2\singalR2\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\joyce\105\singalR2\singalR2\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\joyce\105\singalR2\singalR2\bin\Microsoft.Owin.dll
+D:\joyce\105\singalR2\singalR2\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\joyce\105\singalR2\singalR2\bin\Microsoft.Owin.Security.dll
+D:\joyce\105\singalR2\singalR2\bin\Microsoft.Web.Infrastructure.dll
+D:\joyce\105\singalR2\singalR2\bin\Newtonsoft.Json.dll
+D:\joyce\105\singalR2\singalR2\bin\Owin.dll
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Helpers.dll
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Mvc.dll
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Optimization.dll
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Razor.dll
+D:\joyce\105\singalR2\singalR2\bin\System.Web.WebPages.Deployment.dll
+D:\joyce\105\singalR2\singalR2\bin\System.Web.WebPages.dll
+D:\joyce\105\singalR2\singalR2\bin\System.Web.WebPages.Razor.dll
+D:\joyce\105\singalR2\singalR2\bin\WebGrease.dll
+D:\joyce\105\singalR2\singalR2\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\joyce\105\singalR2\singalR2\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\joyce\105\singalR2\singalR2\bin\Microsoft.Owin.xml
+D:\joyce\105\singalR2\singalR2\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\joyce\105\singalR2\singalR2\bin\Microsoft.Owin.Security.xml
+D:\joyce\105\singalR2\singalR2\bin\Newtonsoft.Json.xml
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Helpers.xml
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Mvc.xml
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Optimization.xml
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Razor.xml
+D:\joyce\105\singalR2\singalR2\bin\System.Web.WebPages.xml
+D:\joyce\105\singalR2\singalR2\bin\System.Web.WebPages.Deployment.xml
+D:\joyce\105\singalR2\singalR2\bin\System.Web.WebPages.Razor.xml
+D:\joyce\105\singalR2\singalR2\bin\Antlr3.Runtime.pdb
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\Microsoft.Owin.resources.dll
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\Microsoft.Owin.Host.SystemWeb.resources.dll
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\Microsoft.Owin.Security.resources.dll
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\System.Web.Helpers.resources.dll
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\System.Web.Mvc.resources.dll
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\System.Web.Optimization.resources.dll
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\System.Web.Razor.resources.dll
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\System.Web.WebPages.resources.dll
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
+D:\joyce\105\singalR2\singalR2\obj\Debug\singalR2.csprojResolveAssemblyReference.cache
+D:\joyce\105\singalR2\singalR2\obj\Debug\singalR2.dll
+D:\joyce\105\singalR2\singalR2\obj\Debug\singalR2.pdb
+D:\joyce\105\singalR2\singalR2\bin\Notification.dll
+D:\joyce\105\singalR2\singalR2\bin\Notification.pdb
+D:\joyce\105\singalR2\singalR2\bin\System.Net.Http.Formatting.dll
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Http.dll
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Http.WebHost.dll
+D:\joyce\105\singalR2\singalR2\bin\System.Net.Http.Formatting.xml
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Http.xml
+D:\joyce\105\singalR2\singalR2\bin\System.Web.Http.WebHost.xml
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\System.Web.Http.resources.dll
+D:\joyce\105\singalR2\singalR2\bin\zh-Hant\System.Web.Http.WebHost.resources.dll

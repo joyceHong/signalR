@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <input type="text" id="device" name="device" />
+    <input type="text" id="message" name="message"  />
+    <input type="submit" value="推播" />
+    <input type="button" value="test" onclick="test()" />
+}
+    </div>
+</div>
+<script type="text/javascript" src="//cdn.pubnub.com/pubnub-3.7.4.min.js"></script> 
+<script>
+    //測試的序號
+
+    var pubnub = PUBNUB.init({
+        subscribe_key: 'sub-c-8bcc0522-d9b6-11e4-8301-0619f8945a4f',
+        publish_key: 'pub-c-0a80cacf-ffa3-447c-826f-b356699f2735',
+    });
+
+    function string2Bin(str) {
+        var result = [];
+        for (var i = 0; i < str.length; i++) {
+            result.push(str.charCodeAt(i));
+        }
+        return result;
+    }
+
+    function bin2String(array) {
+        return String.fromCharCode.apply(String, array);
+    }
+
+    function test() {
+        var result = [];
+        result = string2Bin('測試'); // [102, 111, 111]
+        alert(result);
+        alert(bin2String(string2Bin('測試')) === '測試'); // true
+    }
+
+    function changeTemperature(e) 
+    {
+        alert("run changeTemperature");
+
+        var temp = document.getElementById("message").value;
+
+        alert(temp);
+
+        pubnub.publish(
+            { channel: 'gcm-test', message: 
+                { temperature: temp } 
+            });
+        sendPush();
+    }
+
+    function sendPush() {
+        pubnub.mobile_gw_provision(
+            {
+                device_id: 'APA91bEGqTS1CrOAl6REHaTa255rCYciE0dt-ORjcZxTKh7Bd-Vm_3gnApS_F-lrsvxEjle7BuxRy7zNim1UJ8sQ4FtlGvLargWmTGipXNu6pkEToEkd4aLmox-iXnSdyGhkggkTlYkZ4Z3HWRRRd3VAZQkiQMbbg',
+                channel: 'gcm-test',
+                op: 'add',
+                gw_type: 'gcm',
+                error: function (msg)
+                {
+                    console.log(msg);
+                },
+                callback: successCallback
+            });
+    }
+
+    function successCallback()
+    {
+        var message = PNmessage();
+        message.pubnub = pubnub;
+        
+        message.callback = function (msg)
+        {
+            console.log(msg);
+        };
+
+        message.error = function (msg)
+        {
+            console.log(msg);
+        };
+
+        message.channel = channel;
+
+        message.gcm =
+            {
+                title: 'Push Demo',
+                message: 'The room temperature is set too high'
+            };
+
+        message.publish();
+    }
+</script>

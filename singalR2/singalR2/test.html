@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="Scripts/angular.min.js"></script>
+</head>
+<body ng-app="testApp">
+    <div class="row" ng-controller="testController">
+    </div>    
+    <script type="text/javascript">
+        var app = angular.module("testApp", []);
+        //app.config(['$httpProvider', function ($httpProvider) {
+        //    $httpProvider.defaults.useXDomain = true;
+        //    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+        //}]);
+
+        app.controller("testController", function ($scope, $http) {           
+            $http.get("http://192.168.1.63:3000/patients").success(function (data, status, header, config) {
+                alert(data[0].病患姓名);
+            }).error(function (data, status, headers, config) {
+                alert("web api 網址失敗!");
+            })
+        });
+
+    </script>
+</body>
+</html>

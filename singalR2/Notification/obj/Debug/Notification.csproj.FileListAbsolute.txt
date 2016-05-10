@@ -1,0 +1,5 @@
+D:\joyce\105\singalR2\Notification\obj\Debug\Notification.csprojResolveAssemblyReference.cache
+D:\joyce\105\singalR2\Notification\bin\Debug\Notification.dll
+D:\joyce\105\singalR2\Notification\bin\Debug\Notification.pdb
+D:\joyce\105\singalR2\Notification\obj\Debug\Notification.dll
+D:\joyce\105\singalR2\Notification\obj\Debug\Notification.pdb
